@@ -1,216 +1,245 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
-    <link rel="stylesheet" href="/scss/app.scss" />
-<!--    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
-    <script type="text/javascript" preload src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
+    <link rel="stylesheet" href="../scss/app.scss" />
+    <!--    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
+    <script
+      type="text/javascript"
+      preload
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="/scripts/main.ts"></script>
-</head>
-<body>
+    <script type="module" src="../scripts/main.ts"></script>
+  </head>
+  <body>
     <header>
-        <link rel="stylesheet" href="/scss/layouts/header.scss" />
+      <link rel="stylesheet" href="../scss/layouts/header.scss" />
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Bootstrap <span class="badge bg-success">v5</span></a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            Bootstrap
+            <span class="badge bg-success">v5</span>
+          </a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+          >
             <div class="hamburger-toggle">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Multilevel</a>
-                    <ul class="dropdown-menu shadow">
-                        <li><a class="dropdown-item" href="#">Gallery</a></li>
-                        <li><a class="dropdown-item" href="#">Blog</a></li>
-                        <li class="dropdown-submenu">
-                            <a href="#" class="dropdown-item dropdown-submenu-toggle icon-left">Submenu Left</a>
-                            <ul class="dropdown-menu dropdown-menu-right dropdown-submenu shadow">
-                                <li><a class="dropdown-item" href=""> Third level 1</a></li>
-                                <li><a class="dropdown-item" href=""> Third level 2</a></li>
-                                <li><a class="dropdown-item" href=""> Third level 3</a></li>
-                                <li><a class="dropdown-item" href=""> Third level 4</a></li>
-                                <li><a class="dropdown-item" href=""> Third level 5</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-submenu">
-                            <a href="#" class="dropdown-item dropdown-submenu-toggle">Submenu Right</a>
-                            <ul class="dropdown-menu dropdown-submenu shadow">
-                                <li><a class="dropdown-item" href=""> Second level 1</a></li>
-                                <li><a class="dropdown-item" href=""> Second level 2</a></li>
-                                <li><a class="dropdown-item" href=""> Second level 3</a></li>
-                                <li class="dropdown-submenu">
-                                    <a href="#" class="dropdown-item dropdown-submenu-toggle">Let's go deeper!</a>
-                                    <ul class="dropdown-menu dropdown-submenu shadow">
-                                        <li><a class="dropdown-item" href=""> Third level 1</a></li>
-                                        <li><a class="dropdown-item" href=""> Third level 2</a></li>
-                                        <li><a class="dropdown-item" href=""> Third level 3</a></li>
-                                        <li><a class="dropdown-item" href=""> Third level 4</a></li>
-                                        <li><a class="dropdown-item" href=""> Third level 5</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="dropdown-item" href=""> Third level 5</a></li>
-                            </ul>
-                        </li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Multilevel</a>
+                <ul class="dropdown-menu shadow">
+                  <li><a class="dropdown-item" href="#">Gallery</a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li class="dropdown-submenu">
+                    <a href="#" class="dropdown-item dropdown-submenu-toggle icon-left">Submenu Left</a>
+                    <ul class="dropdown-menu dropdown-menu-right dropdown-submenu shadow">
+                      <li><a class="dropdown-item" href="">Third level 1</a></li>
+                      <li><a class="dropdown-item" href="">Third level 2</a></li>
+                      <li><a class="dropdown-item" href="">Third level 3</a></li>
+                      <li><a class="dropdown-item" href="">Third level 4</a></li>
+                      <li><a class="dropdown-item" href="">Third level 5</a></li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown dropdown-mega">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Megamenu</a>
-                    <div class="dropdown-menu shadow">
-                        <div class="mega-content px-4">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-12 col-sm-4 col-md-3 py-4">
-                                        <h5>Pages</h5>
-                                        <div class="list-group">
-                                            <a class="list-group-item" href="#">Accomodations</a>
-                                            <a class="list-group-item" href="#">Terms & Conditions</a>
-                                            <a class="list-group-item" href="#">Privacy</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-4 col-md-3 py-4">
-                                        <h5>Card</h5>
-                                        <div class="card">
-                                            <img src="https://placehold.it/320x180" class="img-fluid" alt="image">
-                                            <div class="card-body">
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-4 col-md-3 py-4">
-                                        <h5>Lot of Pages</h5>
-                                        <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.</p>
-                                    </div>
-                                    <div class="col-12 col-sm-12 col-md-3 py-4">
-                                        <h5>Damn, so many</h5>
-                                        <div class="list-group">
-                                            <a class="list-group-item" href="#">Accomodations</a>
-                                            <a class="list-group-item" href="#">Terms & Conditions</a>
-                                            <a class="list-group-item" href="#">Privacy</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a href="#" class="dropdown-item dropdown-submenu-toggle">Submenu Right</a>
+                    <ul class="dropdown-menu dropdown-submenu shadow">
+                      <li><a class="dropdown-item" href="">Second level 1</a></li>
+                      <li><a class="dropdown-item" href="">Second level 2</a></li>
+                      <li><a class="dropdown-item" href="">Second level 3</a></li>
+                      <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-item dropdown-submenu-toggle">Let's go deeper!</a>
+                        <ul class="dropdown-menu dropdown-submenu shadow">
+                          <li><a class="dropdown-item" href="">Third level 1</a></li>
+                          <li><a class="dropdown-item" href="">Third level 2</a></li>
+                          <li><a class="dropdown-item" href="">Third level 3</a></li>
+                          <li><a class="dropdown-item" href="">Third level 4</a></li>
+                          <li><a class="dropdown-item" href="">Third level 5</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="dropdown-item" href="">Third level 5</a></li>
+                    </ul>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown dropdown-mega">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Megamenu</a>
+                <div class="dropdown-menu shadow">
+                  <div class="mega-content px-4">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-12 col-sm-4 col-md-3 py-4">
+                          <h5>Pages</h5>
+                          <div class="list-group">
+                            <a class="list-group-item" href="#">Accomodations</a>
+                            <a class="list-group-item" href="#">Terms & Conditions</a>
+                            <a class="list-group-item" href="#">Privacy</a>
+                          </div>
                         </div>
+                        <div class="col-12 col-sm-4 col-md-3 py-4">
+                          <h5>Card</h5>
+                          <div class="card">
+                            <img src="https://placehold.it/320x180" class="img-fluid" alt="image" />
+                            <div class="card-body">
+                              <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-3 py-4">
+                          <h5>Lot of Pages</h5>
+                          <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 py-4">
+                          <h5>Damn, so many</h5>
+                          <div class="list-group">
+                            <a class="list-group-item" href="#">Accomodations</a>
+                            <a class="list-group-item" href="#">Terms & Conditions</a>
+                            <a class="list-group-item" href="#">Privacy</a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
             </ul>
             <form class="d-flex">
-                <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+              <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
+          </div>
         </div>
-    </div>
-</nav>
+      </nav>
 
-<script type="module" src="/scripts/modules/header.ts"></script>
-
+      <script type="module" src="../scripts/modules/header.ts"></script>
     </header>
     <div class="container-fluid">
-        
-<link rel="stylesheet" href="/scss/index.scss" />
+      <link rel="stylesheet" href="../scss/index.scss" />
 
-<div class="row">
-    <div id="welcome">
-        <svg viewBox="0 0 600 400">
+      <div class="row">
+        <div id="welcome">
+          <svg viewBox="0 0 600 400">
             <symbol id="s-text">
-                <text text-anchor="middle" x="50%" y="50%" dy=".35em">Welcome</text>
+              <text text-anchor="middle" x="50%" y="50%" dy=".35em">Welcome</text>
             </symbol>
             <use class="text" xlink:href="#s-text"></use>
             <use class="text" xlink:href="#s-text"></use>
             <use class="text" xlink:href="#s-text"></use>
             <use class="text" xlink:href="#s-text"></use>
             <use class="text" xlink:href="#s-text"></use>
-        </svg>
-    </div>
-</div>
-<div class="row">
-    <div class="app-loading">
-        <svg viewBox="0 0 1320 300">
-            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                Outside UI
-            </text>
-        </svg>
-    </div>
-</div>
-
-    </div>
-    <link rel="stylesheet" href="/scss/layouts/footer.scss" />
-<footer class="site-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <h6>About</h6>
-                <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
-            </div>
-
-            <div class="col-xs-6 col-md-3">
-                <h6>Categories</h6>
-                <ul class="footer-links">
-                    <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-                    <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-                    <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-                    <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-                    <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-                    <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
-                </ul>
-            </div>
-
-            <div class="col-xs-6 col-md-3">
-                <h6>Quick Links</h6>
-                <ul class="footer-links">
-                    <li><a href="http://scanfcode.com/about/">About Us</a></li>
-                    <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-                    <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-                    <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-                    <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
-                </ul>
-            </div>
+          </svg>
         </div>
-        <hr>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-                <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
-                    <a href="#">Scanfcode</a>.
-                </p>
-            </div>
-
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <ul class="social-icons">
-                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                </ul>
-            </div>
+      </div>
+      <div class="row">
+        <div class="app-loading">
+          <svg viewBox="0 0 1320 300">
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">Outside UI</text>
+          </svg>
         </div>
+      </div>
     </div>
-</footer>
+    <link rel="stylesheet" href="../scss/layouts/footer.scss" />
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">
+              Scanfcode.com
+              <i>CODE WANTS TO BE SIMPLE</i>
+              is an initiative to help the upcoming programmers with the code. Scanfcode focuses on providing the most
+              efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in
+              different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android,
+              SQL and Algorithm.
+            </p>
+          </div>
 
-</body>
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2017 All Rights Reserved by
+              <a href="#">Scanfcode</a>
+              .
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+              </li>
+              <li>
+                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
