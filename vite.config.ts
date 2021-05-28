@@ -2,6 +2,7 @@ import * as glob from 'fast-glob';
 import { resolve, join } from 'path';
 import { defineConfig } from 'vite';
 import eslintPlugin from 'vite-plugin-eslint';
+import styleLint from '@amatlash/vite-plugin-stylelint';
 
 import * as tsconfig from './tsconfig.json';
 
@@ -31,7 +32,7 @@ const files = glob.sync(resolve(__dirname, 'src') + '/**/*.html').reduce((acc: R
 export default defineConfig({
   root: 'src',
   clearScreen: false, // This is to show Eleventy output in the console along with Vite output
-  plugins: [eslintPlugin()],
+  plugins: [styleLint(), eslintPlugin()],
   build: {
     rollupOptions: {
       input: files,
