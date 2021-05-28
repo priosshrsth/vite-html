@@ -1,0 +1,113 @@
+<link rel="stylesheet" href="/scss/layouts/header.scss" />
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bootstrap <span class="badge bg-success">v5</span></a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <div class="hamburger-toggle">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Multilevel</a>
+                    <ul class="dropdown-menu shadow">
+                        <li><a class="dropdown-item" href="#">Gallery</a></li>
+                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-item dropdown-submenu-toggle icon-left">Submenu Left</a>
+                            <ul class="dropdown-menu dropdown-menu-right dropdown-submenu shadow">
+                                <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                                <li><a class="dropdown-item" href=""> Third level 2</a></li>
+                                <li><a class="dropdown-item" href=""> Third level 3</a></li>
+                                <li><a class="dropdown-item" href=""> Third level 4</a></li>
+                                <li><a class="dropdown-item" href=""> Third level 5</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-item dropdown-submenu-toggle">Submenu Right</a>
+                            <ul class="dropdown-menu dropdown-submenu shadow">
+                                <li><a class="dropdown-item" href=""> Second level 1</a></li>
+                                <li><a class="dropdown-item" href=""> Second level 2</a></li>
+                                <li><a class="dropdown-item" href=""> Second level 3</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="dropdown-item dropdown-submenu-toggle">Let's go deeper!</a>
+                                    <ul class="dropdown-menu dropdown-submenu shadow">
+                                        <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                                        <li><a class="dropdown-item" href=""> Third level 2</a></li>
+                                        <li><a class="dropdown-item" href=""> Third level 3</a></li>
+                                        <li><a class="dropdown-item" href=""> Third level 4</a></li>
+                                        <li><a class="dropdown-item" href=""> Third level 5</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href=""> Third level 5</a></li>
+                            </ul>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown dropdown-mega">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Megamenu</a>
+                    <div class="dropdown-menu shadow">
+                        <div class="mega-content px-4">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5>Pages</h5>
+                                        <div class="list-group">
+                                            <a class="list-group-item" href="#">Accomodations</a>
+                                            <a class="list-group-item" href="#">Terms & Conditions</a>
+                                            <a class="list-group-item" href="#">Privacy</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5>Card</h5>
+                                        <div class="card">
+                                            <img src="https://placehold.it/320x180" class="img-fluid" alt="image">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5>Lot of Pages</h5>
+                                        <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.</p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-3 py-4">
+                                        <h5>Damn, so many</h5>
+                                        <div class="list-group">
+                                            <a class="list-group-item" href="#">Accomodations</a>
+                                            <a class="list-group-item" href="#">Terms & Conditions</a>
+                                            <a class="list-group-item" href="#">Privacy</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<script type="module" src="/scripts/modules/header.ts"></script>

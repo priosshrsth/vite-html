@@ -1,0 +1,45 @@
+{
+  "name": "vite-html",
+  "license": "MIT",
+  "version": "0.0.0",
+  "scripts": {
+    "prestart": "run-s clean",
+    "start": "run-p *:dev",
+    "prebuild": "run-s clean",
+    "build": "NODE_ENV=production run-s eleventy:build vite:build",
+    "clean": "run-s clean:files clean:empty",
+    "clean:files": "del 'src/pages/**/*.html' public",
+    "clean:empty": "delete-empty src",
+    "eleventy:dev": "eleventy --watch",
+    "eleventy:build": "eleventy",
+    "vite:dev": "vite",
+    "vite:build": "ts && vite build",
+    "serve": "vite preview",
+    "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "format": "prettier --write --plugin-search-dir=. ."
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.1",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@types/node": "^15.6.1",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "del-cli": "^3.0.1",
+    "delete-empty": "^3.0.0",
+    "esbuild": "^0.12.4",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.0",
+    "sass": "1.32.13",
+    "typescript": "^4.2.3",
+    "vite": "^2.3.4",
+    "vite-plugin-eslint": "^1.1.1",
+    "vite-plugin-handlebars": "^1.5.1",
+    "vite-plugin-html": "^2.0.7"
+  }
+}
