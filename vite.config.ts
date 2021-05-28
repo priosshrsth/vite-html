@@ -1,12 +1,12 @@
-// noinspection TypeScriptUnresolvedFunction
-const glob = require('fast-glob');
+import * as glob from 'fast-glob';
 import { resolve, join } from 'path';
 import { defineConfig } from 'vite';
 import eslintPlugin from 'vite-plugin-eslint';
 
-const tsconfig = require('./tsconfig.json');
+import * as tsconfig from './tsconfig.json';
 
 const paths = tsconfig.compilerOptions.paths;
+
 const defaultAlias = Object.keys(paths).reduce((acc, key) => {
   const value = paths[key][0];
   const path: string = key.replace('/*', '');

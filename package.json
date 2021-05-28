@@ -15,7 +15,7 @@
     "vite:dev": "vite",
     "vite:build": "ts && vite build",
     "serve": "vite preview",
-    "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "lint": "eslint --ignore-path .gitignore .",
     "format": "prettier --write --plugin-search-dir=. ."
   },
   "dependencies": {
