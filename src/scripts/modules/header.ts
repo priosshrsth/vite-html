@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener('DOMContentLoaded', async () => {
   const dropdownElementList = Array.from(document.querySelectorAll('.dropdown-toggle'));
   const dropdownSubmenuElementList = Array.from(document.querySelectorAll('.dropdown-submenu-toggle'));
   const dropdownMenus = Array.from(document.querySelectorAll('.dropdown-menu'));
@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   dropdownElementList.map(function (dropdownToggleEl) {
     return new bootstrap.Dropdown(dropdownToggleEl);
   });
-  console.log(document.querySelectorAll('.dropdown-toggle'));
+
   dropdownSubmenuElementList.map(function (el: HTMLElement) {
     el.onclick = function (e) {
       e.stopPropagation();

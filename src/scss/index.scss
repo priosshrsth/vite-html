@@ -1,133 +1,133 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 .app-loading {
-  height: 50vh;
-  min-height: 300px;
-  width: 100vw;
-  background: white;
-  position: relative;
-  top: 0;
-  z-index: 1;
-  transition: transform 4s ease, height 1.5s ease, width 1s ease, opacity 3s ease, background-color 1s ease;
-  left: 0;
-  opacity: 1;
+	height: 50vh;
+	min-height: 300px;
+	width: 100vw;
+	background: white;
+	position: relative;
+	top: 0;
+	z-index: 1;
+	transition: transform 4s ease, height 1.5s ease, width 1s ease, opacity 3s ease, background-color 1s ease;
+	left: 0;
+	opacity: 1;
 }
 
 .app-loading svg {
-  font-family: 'Russo One', sans-serif;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+	font-family: 'Russo One', sans-serif;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
 body.loading {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
 }
 
 .app-loading svg text {
-  text-transform: uppercase;
-  animation: stroke 5s infinite alternate;
-  stroke-width: 2;
-  stroke: #365fa0;
-  font-size: 140px;
-  width: 0;
+	text-transform: uppercase;
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #365fa0;
+	font-size: 140px;
+	width: 0;
 }
 
 @keyframes stroke {
-  0% {
-    fill: rgba(72, 138, 20, 0);
-    stroke: rgba(54, 95, 160, 1);
-    stroke-dashoffset: 25%;
-    stroke-dasharray: 0 50%;
-    stroke-width: 2;
-  }
-  70% {
-    fill: rgba(72, 138, 20, 0);
-    stroke: rgba(54, 95, 160, 1);
-  }
-  80% {
-    fill: rgba(72, 138, 20, 0);
-    stroke: rgba(54, 95, 160, 1);
-    stroke-width: 3;
-  }
-  100% {
-    fill: rgba(72, 138, 204, 1);
-    stroke: rgba(54, 95, 160, 0);
-    stroke-dashoffset: -25%;
-    stroke-dasharray: 50% 0;
-    stroke-width: 0;
-  }
+	0% {
+		fill: rgba(72, 138, 20, 0);
+		stroke: rgba(54, 95, 160, 1);
+		stroke-dashoffset: 25%;
+		stroke-dasharray: 0 50%;
+		stroke-width: 2;
+	}
+	70% {
+		fill: rgba(72, 138, 20, 0);
+		stroke: rgba(54, 95, 160, 1);
+	}
+	80% {
+		fill: rgba(72, 138, 20, 0);
+		stroke: rgba(54, 95, 160, 1);
+		stroke-width: 3;
+	}
+	100% {
+		fill: rgba(72, 138, 204, 1);
+		stroke: rgba(54, 95, 160, 0);
+		stroke-dashoffset: -25%;
+		stroke-dasharray: 50% 0;
+		stroke-width: 0;
+	}
 }
 
 .app-loading.loaded {
-  background: none;
-  opacity: 0.5;
-  transform: translate(-100%, -100%);
-  height: 0;
-  width: 0;
+	background: none;
+	opacity: 0.5;
+	transform: translate(-100%, -100%);
+	height: 0;
+	width: 0;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 
 #welcome {
-  height: 50vh;
-  min-height: 300px;
-  width: 100%;
-  position: relative;
-  font: 5em/1 Open Sans, Impact;
-  text-transform: uppercase;
-  overflow: hidden;
+	height: 50vh;
+	min-height: 300px;
+	width: 100%;
+	position: relative;
+	font: 5em/1 Open Sans, Impact;
+	text-transform: uppercase;
+	overflow: hidden;
 
-  svg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
+	svg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
 
-  .text {
-    fill: none;
-    stroke-width: 3;
-    stroke-linejoin: round;
-    stroke-dasharray: 70 330;
-    stroke-dashoffset: 0;
-    -webkit-animation: logo-stroke 6s infinite linear;
-    animation: logo-stroke 6s infinite linear;
-  }
-  .text:nth-child(5n+1) {
-    stroke: #F2385A;
-    -webkit-animation-delay: -1.2s;
-    animation-delay: -1.2s;
-  }
-  .text:nth-child(5n+2) {
-    stroke: #F5A503;
-    -webkit-animation-delay: -2.4s;
-    animation-delay: -2.4s;
-  }
-  .text:nth-child(5n+3) {
-    stroke: #E9F1DF;
-    -webkit-animation-delay: -3.6s;
-    animation-delay: -3.6s;
-  }
-  .text:nth-child(5n+4) {
-    stroke: #56D9CD;
-    -webkit-animation-delay: -4.8s;
-    animation-delay: -4.8s;
-  }
-  .text:nth-child(5n+5) {
-    stroke: #3AA1BF;
-    -webkit-animation-delay: -6s;
-    animation-delay: -6s;
-  }
+	.text {
+		fill: none;
+		stroke-width: 3;
+		stroke-linejoin: round;
+		stroke-dasharray: 70 330;
+		stroke-dashoffset: 0;
+		-webkit-animation: logo-stroke 6s infinite linear;
+		animation: logo-stroke 6s infinite linear;
+	}
+	.text:nth-child(5n+1) {
+		stroke: #F2385A;
+		-webkit-animation-delay: -1.2s;
+		animation-delay: -1.2s;
+	}
+	.text:nth-child(5n+2) {
+		stroke: #F5A503;
+		-webkit-animation-delay: -2.4s;
+		animation-delay: -2.4s;
+	}
+	.text:nth-child(5n+3) {
+		stroke: #E9F1DF;
+		-webkit-animation-delay: -3.6s;
+		animation-delay: -3.6s;
+	}
+	.text:nth-child(5n+4) {
+		stroke: #56D9CD;
+		-webkit-animation-delay: -4.8s;
+		animation-delay: -4.8s;
+	}
+	.text:nth-child(5n+5) {
+		stroke: #3AA1BF;
+		-webkit-animation-delay: -6s;
+		animation-delay: -6s;
+	}
 
-  @-webkit-keyframes logo-stroke {
-    100% {
-      stroke-dashoffset: -400;
-    }
-  }
-  @keyframes logo-stroke {
-    100% {
-      stroke-dashoffset: -400;
-    }
-  }
+	@-webkit-keyframes logo-stroke {
+		100% {
+			stroke-dashoffset: -400;
+		}
+	}
+	@keyframes logo-stroke {
+		100% {
+			stroke-dashoffset: -400;
+		}
+	}
 }

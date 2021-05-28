@@ -1,12 +1,18 @@
-// noinspection TypeScriptUnresolvedFunction
-const glob = require('fast-glob');
+// noinspection TypeScriptCheckImport
+
+import * as glob from 'fast-glob';
 import { resolve, join } from 'path';
 import { defineConfig } from 'vite';
 import eslintPlugin from 'vite-plugin-eslint';
+import styleLint from '@amatlash/vite-plugin-stylelint';
 
-const tsconfig = require('./tsconfig.json');
+import * as prettier from 'prettier';
+import * as prettierConfig from './prettier.config';
+
+import * as tsconfig from './tsconfig.json';
 
 const paths = tsconfig.compilerOptions.paths;
+
 const defaultAlias = Object.keys(paths).reduce((acc, key) => {
   const value = paths[key][0];
   const path: string = key.replace('/*', '');
@@ -18,7 +24,10 @@ const defaultAlias = Object.keys(paths).reduce((acc, key) => {
 }, [] as any[]);
 
 const files = glob.sync(resolve(__dirname, 'src') + '/**/*.html').reduce((acc: Record<string, string>, cur: string) => {
-  let name = cur.replace(join(__dirname) + '/src/', '').replace('/index.html', '');
+  let name = cur
+    .replace(join(__dirname) + '/src/', '')
+    .replace('/index.html', '')
+    .replace('.html', '');
   // If name is blank, make up a name for it, like 'home'
   if (name === '') {
     name = 'home';
@@ -28,15 +37,43 @@ const files = glob.sync(resolve(__dirname, 'src') + '/**/*.html').reduce((acc: R
   return acc;
 }, {});
 
+const fileRegex = /\.html$/;
+
+function prettifyHTML() {
+  return {
+    name: 'html-transform',
+    transform(src, id) {
+      if (fileRegex.test(id)) {
+        return {
+          code: prettier.format(src, { ...prettierConfig }),
+          map: null, // provide source map if available
+        };
+      }
+    },
+  };
+}
+
 export default defineConfig({
   root: 'src',
+  base: './',
   clearScreen: false, // This is to show Eleventy output in the console along with Vite output
-  plugins: [eslintPlugin()],
+  plugins: [
+    styleLint(),
+    eslintPlugin({
+      fix: true,
+      exclude: ['node_modules', '*.html', 'src/pages', 'src/index.html'],
+    }),
+    // {
+    //   ...prettifyHTML(),
+    //   enforce: 'post',
+    //   apply: 'build',
+    // },
+  ],
   build: {
     rollupOptions: {
       input: files,
     },
-    outDir: '../public', // The output directory is relative to the project root, so we need to put it back one folder to work
+    outDir: '../dist', // The output directory is relative to the project root, so we need to put it back one folder to work
   },
   resolve: {
     alias: [
